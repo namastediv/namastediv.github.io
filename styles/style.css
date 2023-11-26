@@ -175,11 +175,32 @@ main>h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .work:hover {
     border: 5px solid #00FFFF;
 }
+
+.work .cap {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    min-width: 100%;
+    height: 50px;
+    background: #00FFFF;
+    text-align: center;
+    font-size: 1em;
+    color: #1A1A1A;
+    padding: 20px;
+}
+
+.work:hover .cap {
+    display: flex;
+    justify-content: space-between;
+}
+
 
 .work>video,
 .work>img {
@@ -316,6 +337,8 @@ main>h2 {
     line-height: 32px;
     padding-bottom: 20px;
     color: #dbdbdb;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    letter-spacing: -1px;
 }
 
 .proj h3 {
@@ -588,5 +611,15 @@ button {
     .proj {
         width: 90%;
         margin-top: 20%;
+    }
+
+    .work-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    .work-wrapper .work.mixbag {
+        width: 32%;
     }
 }
