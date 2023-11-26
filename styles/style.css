@@ -160,34 +160,6 @@ main>h2 {
     z-index: 0;
 }
 
-@media only screen and (max-width: 600px) {
-    .work-wrapper {
-        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
-    }
-
-    header nav {
-        bottom: 0;
-        position: fixed;
-        top: initial;
-        width: 100%;
-        padding: 0 20px;
-    }
-
-    header nav ul li {
-        margin-right: auto;
-    }
-
-    header nav ul li a {
-        padding: 15px;
-        text-align: center;
-        min-height: 50px;
-    }
-
-    main {
-        padding: 15% 2%;
-    }
-}
-
 .work {
     /* padding-top: 56.25%;
     height: 0;
@@ -514,7 +486,7 @@ video {
 }
 
 .slides {
-    display: none;
+    position: relative;
 }
 
 button {
@@ -533,7 +505,7 @@ button {
     background-color: #000 !important;
     transform: translate(0%, -50%);
     position: absolute;
-    top: 40%;
+    top: 50%;
 }
 
 
@@ -543,4 +515,78 @@ button {
 
 .btn-right {
     right: 0%;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+
+    body {
+        margin: 0;
+    }
+
+    header {
+        padding: 10% 8%;
+    }
+
+    main>h2 {
+        margin: 15% 5% 10%;
+        letter-spacing: -2px;
+        font-size: 11vw;
+    }
+
+    .line {
+        width: 60%;
+    }
+
+    .work-wrapper {
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    }
+
+    nav {
+        bottom: 20px;
+        position: fixed;
+        top: initial;
+        width: 100%;
+        background: transparent;
+        /* padding: 10px; */
+    }
+
+    nav ul li {
+        margin-right: auto;
+
+    }
+
+    nav ul li a {
+        padding: 10px;
+        text-align: center;
+        min-height: 50px;
+    }
+
+    main {
+        padding: 15% 2%;
+    }
+
+    .bio-container {
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 25% 0;
+        overflow-y: scroll;
+    }
+
+    .bio-container>div {
+        width: 90%;
+        margin: 0 0 80px;
+        min-height: auto;
+    }
+
+    .bio-container .info-small span {
+        display: block;
+    }
+
+    .proj {
+        width: 90%;
+        margin-top: 20%;
+    }
 }
