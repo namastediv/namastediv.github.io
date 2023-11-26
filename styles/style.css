@@ -512,3 +512,35 @@ video {
 .card img {
     width: 100%;
 }
+
+.slides {
+    display: none;
+}
+
+button {
+    border: none;
+    display: inline-block;
+    padding: 20px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+    color: #fff !important;
+    background-color: #000 !important;
+    transform: translate(0%, -50%);
+    position: absolute;
+    top: 40%;
+}
+
+
+.btn-left {
+    left: 0%;
+}
+
+.btn-right {
+    right: 0%;
+}
