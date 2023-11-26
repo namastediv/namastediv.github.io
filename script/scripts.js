@@ -225,18 +225,55 @@ function fn_close_proj() {
 }
 closework.addEventListener('click', fn_close_proj, false);
 
-
+/*
 // Listening to the video element
 let clip = document.querySelector(".vid")
 
-/* Adding the event listeners on the video to play/pause the video. */
+/* Adding the event listeners on the video to play/pause the video. *-/
 clip.addEventListener("mouseover", function (e) {
     clip.playbackRate = 2.0;
     clip.play();
 })
 
-/* Applying the mouse out event to pause the video */
+/* Applying the mouse out event to pause the video *-/
 clip.addEventListener("mouseout", function (e) {
     clip.currentTime = 0;
     clip.pause();
-})
+})*/
+
+
+/*var slideIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("slides");
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > x.length) { slideIndex = 1 }
+    x[slideIndex - 1].style.display = "block";
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+*/
+
+var slideIndex = [1, 1];
+var slideId = ["slides1", "slides2"]
+showDivs(1, 0);
+showDivs(1, 1);
+
+function plusDivs(n, no) {
+    showDivs(slideIndex[no] += n, no);
+}
+
+function showDivs(n, no) {
+    var i;
+    var x = document.getElementsByClassName(slideId[no]);
+    if (n > x.length) { slideIndex[no] = 1 }
+    if (n < 1) { slideIndex[no] = x.length }
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    x[slideIndex[no] - 1].style.display = "block";
+}
