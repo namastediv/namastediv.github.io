@@ -636,3 +636,9 @@ button {
         display: flex;
     }
 }
+
+@media screen and (min-width: 1900px) {
+    .work-wrapper {
+        grid-template-columns: repeat(auto-fill, minmax(15%, 1fr));
+    }
+}
