@@ -147,6 +147,7 @@ main>h2 {
     letter-spacing: -5px;
     font-family: 'Bricolage Grotesque', sans-serif;
     margin-left: -7px;
+    font-weight: normal;
 }
 
 
@@ -164,8 +165,8 @@ main>h2 {
     /* padding-top: 56.25%;
     height: 0;
     position: relative; */
-    border: 5px solid transparent;
-    border-radius: 12px;
+    /* border: 3px solid transparent; */
+    /* border-radius: 12px; */
     overflow: hidden;
     list-style: none;
     object-fit: cover;
@@ -179,28 +180,36 @@ main>h2 {
 }
 
 .work:hover {
-    border: 5px solid #00FFFF;
+    /* border: 3px solid #00FFFF; */
 }
 
 .work .cap {
     display: none;
     position: absolute;
-    bottom: 0;
-    left: 0;
-    min-width: 100%;
-    height: 50px;
-    background: #00FFFF;
+    bottom: 5%;
+    left: 5%;
+    width: 90%;
+    background: #000000;
+    /* border-radius: 20px; */
     text-align: center;
     font-size: 1em;
     color: #1A1A1A;
-    padding: 20px;
+    padding: 10px 20px;
+    letter-spacing: -1px;
+    justify-content: space-between;
 }
 
 .work:hover .cap {
     display: flex;
-    justify-content: space-between;
 }
 
+.work .cap h4,
+.work .cap h3 {
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #dbdbdb;
+}
 
 .work>video,
 .work>img {
@@ -457,7 +466,7 @@ video {
 }
 
 .work.mixbag:hover {
-    border: 5px solid transparent;
+    /* border: 3px solid transparent; */
 }
 
 .work.mixbag video,
@@ -621,5 +630,9 @@ button {
 
     .work-wrapper .work.mixbag {
         width: 32%;
+    }
+
+    .work .cap {
+        display: flex;
     }
 }
