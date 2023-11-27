@@ -195,7 +195,6 @@ main>h2 {
     font-size: 1em;
     color: #1A1A1A;
     padding: 10px 20px;
-    letter-spacing: -1px;
     justify-content: space-between;
 }
 
@@ -406,7 +405,7 @@ main>h2 {
 
 .bio-container>div {
     /* background-color: #161616; */
-    width: 35rem;
+    width: 36rem;
     margin: 0 100px 0 0;
     min-height: 380px;
 }
@@ -550,6 +549,11 @@ button {
 }
 
 
+.contenttoggle {
+    display: none;
+    color: #ffffff !important;
+}
+
 
 
 @media only screen and (max-width: 600px) {
@@ -639,6 +643,6 @@ button {
 
 @media screen and (min-width: 1900px) {
     .work-wrapper {
-        grid-template-columns: repeat(auto-fill, minmax(15%, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
     }
 }
