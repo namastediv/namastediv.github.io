@@ -277,3 +277,14 @@ function showDivs(n, no) {
     }
     x[slideIndex[no] - 1].style.display = "block";
 }
+
+const toggle = document.getElementById("toggle");
+const content = document.querySelector(".contenttoggle");
+
+toggle.addEventListener("click", function () {
+    if (window.getComputedStyle(content).display === "none") {
+        content.style.display = "inline-block";
+    } else {
+        content.style.display = "none";
+    }
+});
