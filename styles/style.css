@@ -218,14 +218,14 @@ main>h2 {
     left: 50%;
     position: absolute;
     transform: translate(-50%, -50%); */
+    transform: scale(1);
     width: 100%;
-    transform: scale(1.01);
     transition: all 0.2s ease-in;
 }
 
 .work:hover>video,
 .work:hover>img {
-    transform: scale(1);
+    transform: scale(1.02);
 }
 
 .work.branding {
@@ -332,7 +332,7 @@ main>h2 {
 } */
 
 .proj {
-    width: 70%;
+    width: 80%;
     margin: 5% auto;
     position: relative;
 }
@@ -343,8 +343,8 @@ main>h2 {
 }
 
 .proj h2 {
-    font-size: 32px;
-    line-height: 32px;
+    font-size: 36px;
+    line-height: 36px;
     padding-bottom: 20px;
     color: #dbdbdb;
     font-family: 'Bricolage Grotesque', sans-serif;
@@ -352,7 +352,7 @@ main>h2 {
 }
 
 .proj h3 {
-    font-size: 14px;
+    font-size: 18px;
     position: absolute;
     top: 0;
     right: 0;
@@ -361,12 +361,12 @@ main>h2 {
 
 .proj h4 {
     color: antiquewhite;
-    font-size: 14px;
+    font-size: 16px;
     margin-bottom: 10px;
 }
 
 .proj p {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 20px;
     color: antiquewhite;
     padding: 0 0 20px 0;
@@ -407,9 +407,13 @@ main>h2 {
 
 .bio-container>div {
     /* background-color: #161616; */
-    width: 36rem;
+    width: 25%;
     margin: 0 100px 0 0;
-    min-height: 380px;
+    /* min-height: 380px; */
+}
+
+.bio-container>div.roles {
+    margin: 0 0 250px 0;
 }
 
 .bio-open:hover {
