@@ -1,13 +1,11 @@
+/* font-family: 'Bricolage Grotesque', sans-serif;
+font-family: 'DM Sans', sans-serif; */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-/*
-font-family: 'Bricolage Grotesque', sans-serif;
-font-family: 'Questrial', sans-serif;
-*/
 
 html {
     scroll-behavior: smooth;
@@ -25,7 +23,7 @@ body {
     background-color: #1A1A1A;
     background: #161616;
     background: #ffffff;
-    font-family: 'Questrial', sans-serif;
+    font-family: 'DM Sans', sans-serif;
     font-size: 1em;
     font-weight: 400;
     text-rendering: optimizeLegibility;
@@ -167,7 +165,7 @@ main>h2 {
     position: relative; */
     /* border: 3px solid transparent; */
     /* border-radius: 12px; */
-    overflow: hidden;
+    /* overflow: hidden; */
     list-style: none;
     object-fit: cover;
     object-position: center;
@@ -177,6 +175,7 @@ main>h2 {
     justify-content: center;
     align-items: center;
     position: relative;
+    margin-bottom: 60px;
 }
 
 .work:hover {
@@ -184,18 +183,15 @@ main>h2 {
 }
 
 .work .cap {
-    display: none;
     position: absolute;
-    bottom: 5%;
-    left: 5%;
-    width: 90%;
-    background: #000000;
+    top: 105%;
+    left: 0;
+    width: 100%;
     /* border-radius: 20px; */
     text-align: center;
     font-size: 1em;
     color: #1A1A1A;
-    padding: 10px 20px;
-    justify-content: space-between;
+    display: flex;
 }
 
 .work:hover .cap {
@@ -204,10 +200,16 @@ main>h2 {
 
 .work .cap h4,
 .work .cap h3 {
-    font-size: 1em;
-    text-transform: uppercase;
-    font-weight: 600;
-    color: #dbdbdb;
+    font-size: 21px;
+    color: #1A1A1A;
+    font-weight: 500;
+}
+
+.work .cap h4 {
+    font-weight: bold;
+    margin-right: 15px;
+    color: #374046;
+    font-weight: 300;
 }
 
 .work>video,
