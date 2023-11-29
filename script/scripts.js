@@ -258,10 +258,12 @@ function carousel() {
 }
 */
 
-var slideIndex = [1, 1];
-var slideId = ["slides1", "slides2"]
+var slideIndex = [1, 1, 1, 1];
+var slideId = ["slides1", "slides2", "slides3", "slides4"]
 showDivs(1, 0);
 showDivs(1, 1);
+showDivs(1, 2);
+showDivs(1, 3);
 
 function plusDivs(n, no) {
     showDivs(slideIndex[no] += n, no);
