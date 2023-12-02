@@ -21,6 +21,59 @@
 
 // Get all <video> elements.
 
+
+
+TweenMax.staggerFrom(
+    ".intro > div",
+    0.8,
+    {
+        x: "-60",
+        ease: Power3.easeInOut,
+        opacity: "0",
+    },
+    2
+);
+
+TweenMax.staggerTo(
+    ".intro > div",
+    0.8,
+    {
+        x: "60",
+        ease: Power3.easeInOut,
+        delay: 1.2,
+        opacity: "0",
+    },
+    2
+);
+
+anime.timeline().add({
+    targets: ".intro_wrap",
+    opacity: [1, 0],
+    easing: "easeOutExpo",
+    duration: 1000,
+    delay: 6000,
+    begin: function () {
+        document.querySelector('.intro_wrap').style.display = 'none';
+    },
+})
+
+anime.timeline().add({
+    targets: "header",
+    opacity: [0, 1],
+    translateY: [80, 0],
+    easing: "easeOutExpo",
+    duration: 2000,
+    delay: 6000
+});
+
+anime.timeline().add({
+    targets: "main",
+    opacity: [0, 1],
+    easing: "easeOutExpo",
+    duration: 2000,
+    delay: 6000 + 300
+});
+
 var work;
 
 const videos = document.querySelectorAll('video');
