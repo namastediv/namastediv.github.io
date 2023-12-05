@@ -167,17 +167,31 @@ main {
     width: 100vw;
     padding: 10% 10% 0;
     padding: 2%;
+    padding-bottom: 100px;
 }
 
 main>h2 {
     font-size: 8vw;
-    line-height: 0.8em;
+    line-height: 1.1em;
     margin: 150px 0 100px;
     color: #1A1A1A;
-    letter-spacing: -5px;
+    letter-spacing: -3px;
     font-family: 'Bricolage Grotesque', sans-serif;
     margin-left: -7px;
     font-weight: normal;
+    display: none;
+}
+
+.whatif span {
+    margin-left: 5px;
+    border-right: .05em solid;
+    animation: caret 1s steps(1) infinite;
+}
+
+@keyframes caret {
+    50% {
+        border-color: transparent;
+    }
 }
 
 
@@ -604,6 +618,7 @@ button {
         padding: 10% 8%;
     }
 
+
     main>h2 {
         margin: 15% 5% 10%;
         letter-spacing: -2px;
@@ -681,7 +696,7 @@ button {
 
 @media screen and (min-width: 1900px) {
     .work-wrapper {
-        grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(18%, 1fr));
     }
 }
 
