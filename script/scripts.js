@@ -22,6 +22,59 @@
 // Get all <video> elements.
 
 
+//document.addEventListener('DOMContentLoaded', function (event) {
+// array with texts to type in typewriter
+//var dataText = ["What if we could make every drop of water count?", "What if IKEA collab with LEGO?", "What if we treated poverty as a global emergency?", "What if AI became an integral part of education globally?", "What if we protected nature like our own life support system?", "What if we embraced a 'no one goes hungry' mindset globally?"];
+var dataText = ["Imagine if we could make every drop of water count.", "Imagine an IKEA collaboration with LEGO.", "Imagine if education aimed to nurture creativity over conformity.", "Imagine if we embraced a 'no one goes hungry' mindset globally."];
+
+var currentTimeout;
+
+function pauseAnimation() {
+    clearTimeout(currentTimeout);
+}
+
+function resetAnimation() {
+    pauseAnimation();
+    document.querySelector(".whatif").innerHTML = ""; // Reset the text to an empty string or an initial value
+    StartTextAnimation(0);
+}
+
+function typeWriter(text, i, fnCallback) {
+    var newText = '';
+
+    if (i < text.length) {
+        newText = text.substring(0, i + 1) + '<span aria-hidden="true"></span>';
+
+        currentTimeout = setTimeout(function () {
+            document.querySelector(".whatif").innerHTML = newText;
+            typeWriter(text, i + 1, fnCallback);
+        }, 100);
+    } else if (typeof fnCallback == 'function') {
+        setTimeout(function () {
+            document.querySelector(".whatif").innerHTML = newText; // Ensure the last character is displayed before the pause
+            fnCallback();
+        }, 2000);
+    }
+}
+
+function StartTextAnimation(i) {
+    if (typeof dataText[i] == 'undefined') {
+        currentTimeout = setTimeout(function () {
+            StartTextAnimation(0);
+        }, 20000);
+    }
+
+    if (i < dataText.length) {
+        typeWriter(dataText[i], 0, function () {
+            setTimeout(function () {
+                StartTextAnimation((i + 1) % dataText.length);
+            }, 0); // Ensure a small delay before starting the next text
+        });
+    }
+}
+
+//});https://codepen.io/Danielgroen/pen/VeRPOq
+
 
 TweenMax.staggerFrom(
     ".intro > div",
@@ -81,6 +134,7 @@ const videos = document.querySelectorAll('video');
 var bio_open = document.getElementsByClassName("bio-open");
 var navpanel = document.getElementsByTagName("nav");
 
+
 // Pause all <video> elements except for the one that started playing.
 function pauseOtherVideos({ target }) {
     for (const video of videos) {
@@ -126,16 +180,34 @@ triggers.forEach(element => {
                 works.classList.remove('hide');
             })
         }
+
+        if (filter === "whatif") {
+            // start the text animation
+            document.getElementById("whynot").style.display = "none";
+            document.getElementById("whatif").style.display = "block";
+            resetAnimation();
+        }
+
+        if (filter != "whatif") {
+            document.getElementById("whynot").style.display = "block";
+            document.getElementById("whatif").style.display = "none";
+            pauseAnimation();
+        }
     })
 });
 
 works.forEach(works => {
-    if (works.classList.contains('campaigns')) {
+    if (works.classList.contains('whatif')) {
         works.classList.remove('hide');
     } else {
         works.classList.add('hide');
     }
 });
+
+//document.getElementById("whynot").style.display = "block";
+document.getElementById("whatif").style.display = "block";
+setTimeout(function () { resetAnimation() }, 6000);
+
 
 
 
