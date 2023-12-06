@@ -25,7 +25,7 @@
 //document.addEventListener('DOMContentLoaded', function (event) {
 // array with texts to type in typewriter
 //var dataText = ["What if we could make every drop of water count?", "What if IKEA collab with LEGO?", "What if we treated poverty as a global emergency?", "What if AI became an integral part of education globally?", "What if we protected nature like our own life support system?", "What if we embraced a 'no one goes hungry' mindset globally?"];
-var dataText = ["Imagine if we could make every drop of water count.", "Imagine an IKEA collaboration with LEGO.", "Imagine if education aimed to nurture creativity over conformity.", "Imagine if we embraced a 'no one goes hungry' mindset globally."];
+var dataText = ["Imagine if we could make every drop of water count.", "Imagine an IKEA collaboration with LEGO.", "Imagine AI start imagining.", "Imagine if education aimed to nurture creativity over conformity.", "Imagine if we embraced a 'no one goes hungry' mindset globally."];
 
 var currentTimeout;
 
