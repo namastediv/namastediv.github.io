@@ -133,6 +133,7 @@ const videos = document.querySelectorAll('video');
 
 var bio_open = document.getElementsByClassName("bio-open");
 var navpanel = document.getElementsByTagName("nav");
+var closebutton = document.getElementById("closework");
 
 
 // Pause all <video> elements except for the one that started playing.
@@ -149,15 +150,16 @@ for (const video of videos) {
     video.addEventListener('play', pauseOtherVideos);
 }
 
+var workwrapper = document.getElementById('workwrapper');
 const triggers = document.querySelectorAll('a.filter-trigger');
 const works = document.querySelectorAll('.work');
 var all = document.querySelector('.reset')
+
 
 function clearActive() {
     var activeLink = document.querySelector('.active');
     activeLink.classList.remove("active");
 }
-
 
 triggers.forEach(element => {
     element.addEventListener('click', function () {
@@ -192,6 +194,13 @@ triggers.forEach(element => {
             document.getElementById("whynot").style.display = "block";
             document.getElementById("whatif").style.display = "none";
             pauseAnimation();
+        }
+
+
+        if (filter == "mixbag") {
+            workwrapper.classList.add('masonry');
+        } else {
+            workwrapper.classList.remove('masonry');
         }
     })
 });
@@ -295,6 +304,11 @@ t2.staggerFrom(
       display: "none",
   }, 0.05);*/
 
+t2.to(closebutton, 0.25, {
+    opacity: "1",
+    display: "block",
+}, 0.05);
+
 t2.to(".work-wrapper", 0.25, {
     opacity: "0",
     display: "none",
@@ -333,6 +347,7 @@ cards.forEach(card => {
             theWork[0].style.display = 'block';
             //var activework = callwork(work);
             t2.reversed(!t2.reversed());
+            //document.getElementById("closework").style.display = "block";
         }
     });
 });
@@ -347,6 +362,7 @@ function fn_close_proj() {
         video.pause();
         video.currentTime = 0;
     }
+    //document.getElementById("closework").style.display = "none";
 }
 closework.addEventListener('click', fn_close_proj, false);
 
