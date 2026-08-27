@@ -8,6 +8,10 @@ font-family: 'DM Sans', sans-serif; */
 }
 
 html {
+    overflow-y: scroll;
+}
+
+html {
     scroll-behavior: smooth;
     max-width: 100%;
     overflow-x: hidden;
@@ -66,7 +70,7 @@ header {
     width: 100vw;
     /* padding: 2%;
     padding: 3% 10%; */
-    padding: 2%;
+    padding: 20px 60px 20px 40px;
     display: -webkit-flex;
     display: flex;
     -webkit-flex-direction: row;
@@ -84,20 +88,36 @@ header {
 }
 
 .title {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
     color: #00FFFF;
     color: #1A1A1A;
     font-size: 20px;
     line-height: 38px;
     position: relative;
+    padding-top: 5px;
 }
 
-.title span {
-    padding-left: 20px;
-    color: #374046;
+header span {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 100;
+    color: #1A1A1A;
+    font-size: 18px;
+    line-height: 38px;
+    position: relative;
+    padding-top: 5px;
 }
+
+/* .title span {
+    display: block;
+    position: absolute;
+    font-weight: normal;
+    color: #374046;
+
+} */
 
 .line {
-    width: 90%;
+    width: 80%;
     height: 1px;
     background: #000000;
     margin-top: 20px;
@@ -171,9 +191,9 @@ main {
 }
 
 main>h2 {
-    font-size: 8vw;
+    font-size: 6vw;
     line-height: 1.1em;
-    margin: 150px 0 100px;
+    margin: 100px 0 60px 0;
     color: #1A1A1A;
     letter-spacing: -3px;
     font-family: 'Bricolage Grotesque', sans-serif;
@@ -199,14 +219,14 @@ main>h2 {
     display: grid;
     grid-gap: 1%;
     grid-row-gap: 2%;
-    grid-template-columns: repeat(auto-fill, minmax(35%, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(24%, 1fr));
     /* margin-bottom: 50px; */
     position: relative;
     z-index: 0;
 }
 
 .work-wrapper.masonry {
-    grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(16%, 1fr));
 }
 
 .work {
@@ -271,6 +291,7 @@ main>h2 {
     transform: scale(1);
     width: 100%;
     transition: all 0.2s ease-in;
+    border-radius: 10px;
 }
 
 .work:hover>video,
@@ -355,7 +376,7 @@ main>h2 {
 
 #closework {
     position: fixed;
-    top: 10%;
+    top: 3%;
     right: 3%;
     font-size: 16px;
     z-index: 5;
@@ -465,7 +486,7 @@ main>h2 {
 }
 
 .bio-container>div.roles {
-    margin: 0 0 250px 0;
+    /*margin: 0 0 250px 0;*/
 }
 
 .bio-open:hover {
@@ -612,6 +633,12 @@ button {
     color: #ffffff !important;
 }
 
+video.verticles {
+    width: auto !important;
+    height: 50vh !important;
+    margin: 0 auto;
+}
+
 
 
 @media only screen and (max-width: 600px) {
@@ -702,7 +729,7 @@ button {
 
 @media screen and (min-width: 1900px) {
     .work-wrapper {
-        grid-template-columns: repeat(auto-fill, minmax(35%, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(24%, 1fr));
     }
 }
 
