@@ -103,7 +103,7 @@ anime.timeline().add({
     targets: ".intro_wrap",
     opacity: [1, 0],
     easing: "easeOutExpo",
-    duration: 1000,
+    duration: 500,
     delay: 6000,
     begin: function () {
         document.querySelector('.intro_wrap').style.display = 'none';
@@ -126,6 +126,7 @@ anime.timeline().add({
     duration: 2000,
     delay: 6000 + 300
 });
+
 
 var work;
 
@@ -278,10 +279,10 @@ function fn_bio_open() {
 }
 bio_open[0].addEventListener('click', fn_bio_open, false);
 
-
+var fadetime = 0.15;
 var t2 = new TimelineMax({ paused: true });
 
-t2.to(".proj-container", 0.25, {
+t2.to(".proj-container", fadetime, {
     borderWidth: 5,
     opacity: 1,
     ease: Expo.ease,
@@ -290,7 +291,7 @@ t2.to(".proj-container", 0.25, {
 
 t2.staggerFrom(
     ".proj-container div",
-    0.25,
+    fadetime,
     {
         y: "10",
         ease: Expo.ease,
@@ -304,27 +305,27 @@ t2.staggerFrom(
       display: "none",
   }, 0.05);*/
 
-t2.to(closebutton, 0.25, {
+t2.to(closebutton, fadetime, {
     opacity: "1",
     display: "block",
 }, 0.05);
 
-t2.to(".work-wrapper", 0.25, {
+t2.to(".work-wrapper", fadetime, {
     opacity: "0",
     display: "none",
 }, 0.05);
 
-t2.to(".bio-container", 0.25, {
+t2.to(".bio-container", fadetime, {
     opacity: "0",
     display: "none",
 }, 0.05);
 
-t2.to("header", 0.25, {
+t2.to("header", fadetime, {
     opacity: "0",
     display: "none",
 }, 0.05);
 
-t2.to(navpanel, 0.25, {
+t2.to(navpanel, fadetime, {
     opacity: "0",
     display: "none",
 }, 0.05);
@@ -366,6 +367,19 @@ function fn_close_proj() {
 }
 closework.addEventListener('click', fn_close_proj, false);
 
+
+const videos1 = document.querySelectorAll('video');
+
+videos1.forEach((video) => {
+    video.addEventListener('play', () => {
+        videos1.forEach((otherVideo) => {
+            if (otherVideo !== video) {
+                otherVideo.pause();
+            }
+        });
+    });
+});
+
 /*
 // Listening to the video element
 let clip = document.querySelector(".vid")
@@ -399,14 +413,26 @@ function carousel() {
 }
 */
 
-var slideIndex = [1, 1, 1, 1];
-var slideId = ["slides1", "slides2", "slides3", "slides4"]
+var slideIndex = [1, 1, 1, 1, 1];
+var slideId = ["slides1", "slides2", "slides3", "slides4", "slides5"]
 showDivs(1, 0);
 showDivs(1, 1);
 showDivs(1, 2);
 showDivs(1, 3);
+showDivs(1, 4);
 
 function plusDivs(n, no) {
+    const videos2 = document.querySelectorAll('video');
+
+    videos2.forEach((video) => {
+        video.addEventListener('play', () => {
+            videos2.forEach((otherVideo) => {
+                if (otherVideo !== video) {
+                    otherVideo.pause();
+                }
+            });
+        });
+    });
     showDivs(slideIndex[no] += n, no);
 }
 
