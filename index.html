@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="The portfolio of Divyesh Bhandari, an integrated creative and multidisciplinary designer based in Dubai."
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Divyesh Bhandari · Integrated Creative & Designer</title>
+
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,500&family=DM+Sans:opsz,wght@9..40,200;9..40,300;9..40,500;9..40,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-F772J1P3DW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        window.dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-F772J1P3DW");
+    </script>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#filterDock">Skip to portfolio navigation</a>
+
+    <section class="intro-screen" id="introScreen" aria-label="Introduction">
+      <button class="intro-screen__skip" type="button" data-action="skip-intro">
+        Skip
+      </button>
+      <div class="intro-screen__statements" aria-hidden="true">
+        <p class="intro-screen__statement">
+          <span>Minimalist</span>
+          Believer
+        </p>
+        <p class="intro-screen__statement">
+          <span>Design</span>
+          Driven
+        </p>
+        <p class="intro-screen__statement">
+          <span>Potential</span>
+          <strong class="glitch" data-text="Disruptor">Disruptor</strong>
+        </p>
+      </div>
+    </section>
+
+    <header class="site-header">
+      <a
+        class="site-header__logo"
+        href="#imagine"
+        data-action="show-imagine"
+        aria-label="Return to the Imagine landing page"
+      >Div.</a>
+
+      <ul class="site-header__disciplines" id="disciplineList" aria-label="Disciplines"></ul>
+
+      <button class="pill-button" type="button" data-action="open-bio">Bio.</button>
+    </header>
+
+    <main id="mainContent">
+      <section class="imagine-stage" id="imagine" aria-labelledby="imagineTitle">
+        <h1 class="imagine-stage__ticker" id="imagineTitle">
+          <span id="imagineText">Imagine ideas without a fixed edge.</span>
+          <span class="type-caret" aria-hidden="true"></span>
+        </h1>
+      </section>
+
+      <section class="portfolio" id="portfolio" aria-labelledby="portfolioHeading" hidden>
+        <div class="portfolio__heading">
+          <h2 id="portfolioHeading">Selected work</h2>
+          <p><span id="visibleCount">00</span> items</p>
+        </div>
+
+        <div class="project-grid" id="projectGrid"></div>
+
+        <div class="empty-state" id="emptyState" hidden>
+          <p>No projects here yet.</p>
+          <span>Add projects to this category in data/portfolio.json.</span>
+        </div>
+
+        <div class="load-error" id="loadError" hidden role="alert">
+          <strong>The portfolio data could not be loaded.</strong>
+          <span>Run the folder through a local web server rather than opening the HTML file directly.</span>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" hidden>
+      <p>Divyesh Bhandari</p>
+      <p>Integrated creative · Dubai</p>
+      <p>Portfolio archive</p>
+    </footer>
+
+    <nav class="filter-dock" id="filterDock" tabindex="-1" aria-label="Portfolio filters">
+      <div class="filter-dock__list" id="filterList"></div>
+    </nav>
+
+    <dialog class="bio-dialog" id="bioDialog" aria-labelledby="bioHeading">
+      <button
+        class="dialog-close dialog-close--light"
+        type="button"
+        data-action="close-bio"
+        aria-label="Close biography"
+      >
+        <span>Close</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M6 6l12 12M18 6 6 18" />
+        </svg>
+      </button>
+      <div class="bio-dialog__content" id="bioContent"></div>
+    </dialog>
+
+    <dialog
+      class="project-viewer"
+      id="projectViewer"
+      aria-labelledby="viewerTitle"
+      aria-describedby="viewerDescription"
+    >
+      <div class="project-viewer__shell">
+        <header class="project-viewer__header">
+          <div class="project-viewer__identity">
+            <span class="project-viewer__mark" aria-hidden="true">Div.</span>
+            <div>
+              <h2 id="viewerTitle">Project title</h2>
+              <p id="viewerMeta">Client · Agency</p>
+            </div>
+          </div>
+
+          <div class="project-viewer__actions" aria-label="Project navigation">
+            <button
+              class="icon-button"
+              type="button"
+              data-action="previous-project"
+              aria-label="Previous project"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="m6 14 6-6 6 6" />
+              </svg>
+            </button>
+            <button
+              class="icon-button"
+              type="button"
+              data-action="next-project"
+              aria-label="Next project"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="m6 10 6 6 6-6" />
+              </svg>
+            </button>
+            <button
+              class="dialog-close"
+              type="button"
+              data-action="close-project"
+              aria-label="Close project"
+            >
+              <span>Close</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M6 6l12 12M18 6 6 18" />
+              </svg>
+            </button>
+          </div>
+        </header>
+
+        <div class="project-viewer__stage" id="viewerStage" tabindex="-1"></div>
+
+        <div class="media-controls" id="mediaControls" hidden>
+          <button type="button" data-action="previous-media" aria-label="Previous image or video">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="m14 6-6 6 6 6" />
+            </svg>
+          </button>
+          <p><span id="mediaCurrent">01</span> / <span id="mediaTotal">01</span></p>
+          <button type="button" data-action="next-media" aria-label="Next image or video">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="m10 6 6 6-6 6" />
+            </svg>
+          </button>
+        </div>
+
+        <footer class="project-viewer__footer">
+          <div>
+            <p class="project-viewer__headline" id="viewerHeadline">Project headline</p>
+            <p class="project-viewer__description" id="viewerDescription">Project credits</p>
+          </div>
+          <a class="project-viewer__external" id="viewerExternal" href="#" target="_blank" rel="noreferrer" hidden>
+            Case study ↗
+          </a>
+          <p class="project-viewer__counter">
+            <span id="projectCurrent">01</span> / <span id="projectTotal">01</span>
+          </p>
+        </footer>
+
+        <div class="project-viewer__progress" aria-hidden="true">
+          <span id="projectProgress"></span>
+        </div>
+      </div>
+    </dialog>
+
+    <noscript>
+      <p class="noscript-message">JavaScript is required to load the portfolio projects.</p>
+    </noscript>
+
+    <script src="vendor/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
