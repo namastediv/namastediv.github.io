@@ -1,0 +1,320 @@
+{
+  "site": {
+    "name": "Divyesh Bhandari",
+    "shortName": "Div.",
+    "title": "Integrated Creative, Designer, Brand, Motion, and Technologist",
+    "disciplines": ["Creative", "Art", "Design", "Motion", "Code"],
+    "accent": "#00ffff"
+  },
+  "intro": [
+    { "lead": "Minimalist", "word": "Believer" },
+    { "lead": "Design", "word": "Driven" },
+    { "lead": "Potential", "word": "Disruptor", "effect": "glitch" }
+  ],
+  "navigation": [
+    { "id": "imagine", "label": "Imagine" },
+    { "id": "films", "label": "Films & Motion" },
+    { "id": "design", "label": "Art & Design" },
+    { "id": "archive", "label": "Archives & Everything", "layout": "masonry" }
+  ],
+  "imagine": [
+    "Imagine if we could make every drop of water count.",
+    "Imagine an IKEA collaboration with LEGO.",
+    "Imagine AI start imagining.",
+    "Imagine if education aimed to nurture creativity over conformity.",
+    "Imagine if we embraced a 'no one goes hungry' mindset globally."
+  ],
+  "bio": {
+    "greeting": "Namaste.",
+    "intro": "I'm Divyesh Bhandari, a multidisciplinary designer and art director born in India and based in Dubai. Currently working at Leo Burnett.",
+    "summary": "15+ years of progressive experience in design, art direction, branding and visual design, with added front-end and animation principles. Currently in pursuit of gold in the advertising world.",
+    "fullBio": {
+      "label": "Full Bio · A minute read",
+      "url": "work/Bio_DivyeshBhandari.pdf"
+    },
+    "linkedin": "https://linkedin.com/in/divyeshbhandari/",
+    "phone": "+971 569 24 0602",
+    "roles": [
+      { "role": "Sr. Creative", "company": "Leo Burnett", "place": "Dubai", "years": "2024–Present" },
+      { "role": "Sr. Creative", "company": "ImpactBBDO", "place": "Dubai", "years": "2017–2024" },
+      { "role": "Sr. Creative", "company": "Mirum Agency · DTCM", "place": "Dubai", "years": "2016–2017" },
+      { "role": "Sr. UI Designer / Developer", "company": "General Mills", "place": "Mumbai", "years": "2012–2016" },
+      { "role": "Web Designer → Sr. Designer", "company": "ZWA", "place": "Mumbai", "years": "2008–2012" }
+    ]
+  },
+  "projects": [
+    {
+      "id": "nutella-ramadan-26",
+      "category": "films",
+      "client": "Nutella Biscuits",
+      "title": "Ramadan '26",
+      "headline": "Make the moment this Ramadan",
+      "agency": "Leo Burnett",
+      "credit": "Concept, design and AI exploration for social content.",
+      "thumbnail": "work/thumbs/work-camp-nutella-ramadan-26.jpg",
+      "aspect": 1.48,
+      "media": [
+        { "type": "video", "src": "work/campaign/Nutella_Ramadan_26/Film_01.mp4", "orientation": "portrait" },
+        { "type": "video", "src": "work/campaign/Nutella_Ramadan_26/Film_02.mp4", "orientation": "portrait" },
+        { "type": "video", "src": "work/campaign/Nutella_Ramadan_26/Film_03.mp4", "orientation": "portrait" },
+        { "type": "video", "src": "work/campaign/Nutella_Ramadan_26/Film_04.mp4", "orientation": "portrait" }
+      ]
+    },
+    {
+      "id": "loto-dream-number",
+      "category": "films",
+      "client": "Loto Libanais",
+      "title": "Dream Number",
+      "headline": "Dream Number",
+      "agency": "ImpactBBDO",
+      "credit": "Web creative development and custom font development.",
+      "thumbnail": "work/thumbs/work-camp-loto-dn.jpg",
+      "aspect": 1.48,
+      "external": { "label": "Case study & credits", "url": "https://www.adsoftheworld.com/campaigns/dream-number" },
+      "media": [
+        { "type": "video", "src": "work/campaign/LOTO-DN.mp4" }
+      ]
+    },
+    {
+      "id": "adcb-cibg",
+      "category": "films",
+      "client": "ADCB · CIBG",
+      "title": "Corporate & Investment Banking",
+      "headline": "The edge you need to succeed",
+      "agency": "ImpactBBDO",
+      "credit": "Concept, art direction, design and on-shoot experience. Copy lead: Tamara Pinto. Director: Nizar Sfair.",
+      "thumbnail": "work/thumbs/work-camp-adcb-cibg.jpg",
+      "aspect": 1.48,
+      "media": [
+        { "type": "video", "src": "work/campaign/ADCB_CIBG.mp4" }
+      ]
+    },
+    {
+      "id": "adcb-digital-bytes",
+      "category": "films",
+      "client": "ADCB",
+      "title": "Digital Bytes",
+      "headline": "Empowered by innovation",
+      "agency": "ImpactBBDO",
+      "credit": "Concept, art direction and design.",
+      "thumbnail": "work/thumbs/work-camp-digitalbytes.jpg",
+      "aspect": 1.48,
+      "media": [
+        { "type": "video", "src": "work/campaign/ADCB_Digital_Bytes.mp4" }
+      ]
+    },
+    {
+      "id": "adcb-savings",
+      "category": "films",
+      "client": "ADCB",
+      "title": "Savings Accounts",
+      "headline": "Save for every ambition",
+      "agency": "ImpactBBDO",
+      "credit": "Art direction, design and on-shoot experience. Copy lead: Tamara Pinto. Director: Nizar Sfair.",
+      "thumbnail": "work/thumbs/work-camp-adcb-savings.jpg",
+      "aspect": 1.48,
+      "media": [
+        { "type": "video", "src": "work/campaign/ADCB_Savings.mp4" }
+      ]
+    },
+    {
+      "id": "adcb-sip",
+      "category": "films",
+      "client": "ADCB",
+      "title": "SIP",
+      "headline": "Wealth management solutions",
+      "agency": "ImpactBBDO",
+      "credit": "Art direction, design and storyboard. Copy: Tamara Pinto. Motion: Geoff Maingi.",
+      "thumbnail": "work/thumbs/work-camp-adcb-sip.jpg",
+      "aspect": 1.48,
+      "media": [
+        { "type": "video", "src": "work/campaign/ADCB-SIP.mp4" }
+      ]
+    },
+    {
+      "id": "adcb-private",
+      "category": "films",
+      "client": "ADCB",
+      "title": "Private Banking",
+      "headline": "You know the way, we know you",
+      "agency": "ImpactBBDO",
+      "credit": "Design and on-shoot experience. Copy lead: Tamara Pinto.",
+      "thumbnail": "work/thumbs/work-camp-adcb-private.jpg",
+      "aspect": 1.48,
+      "media": [
+        { "type": "video", "src": "work/campaign/ADCB_Private.mp4" }
+      ]
+    },
+    {
+      "id": "adcb-mastercard",
+      "category": "films",
+      "client": "ADCB · Mastercard",
+      "title": "Effies Submission",
+      "headline": "Debit takes over credit",
+      "agency": "ImpactBBDO",
+      "credit": "Art direction, design and storyboard. Copy: Christopher Shearer. Motion: Benjamin De Souza.",
+      "thumbnail": "work/thumbs/work-camp-adcb-mcdc.jpg",
+      "aspect": 1.48,
+      "media": [
+        { "type": "video", "src": "work/campaign/ADCB-MCDC.mp4" }
+      ]
+    },
+    {
+      "id": "beeah-now-not-tomorrow",
+      "category": "design",
+      "client": "Beeah Group",
+      "title": "COP23 Pitch",
+      "headline": "Now, not tomorrow.",
+      "agency": "ImpactBBDO",
+      "credit": "Art, visual direction and design.",
+      "thumbnail": "work/thumbs/work-camp-beeah.jpg",
+      "aspect": 1.44,
+      "media": [
+        { "type": "image", "src": "work/design/Beeah/01.jpg" },
+        { "type": "image", "src": "work/design/Beeah/02.jpg" },
+        { "type": "image", "src": "work/design/Beeah/03.jpg" }
+      ]
+    },
+    {
+      "id": "adcb-mobile-banking",
+      "category": "design",
+      "client": "ADCB",
+      "title": "Mobile Banking App",
+      "headline": "Reimagine banking with the right choice",
+      "agency": "ImpactBBDO",
+      "credit": "Art, visual direction and design. Modern banking that creates more quality time and empowers people with the freedom to pursue their passions. Copy: Archie Singh.",
+      "thumbnail": "work/design/adcb_01/01.png",
+      "aspect": 1.44,
+      "media": [
+        { "type": "image", "src": "work/design/adcb_01/01.png" },
+        { "type": "image", "src": "work/design/adcb_01/02.png" },
+        { "type": "image", "src": "work/design/adcb_01/03.png" },
+        { "type": "image", "src": "work/design/adcb_01/04.png" },
+        { "type": "image", "src": "work/design/adcb_01/05.png" }
+      ]
+    },
+    {
+      "id": "motf-social-pitch",
+      "category": "design",
+      "client": "Museum of the Future",
+      "title": "Social Pitch",
+      "headline": "Social Pitch",
+      "agency": "ImpactBBDO",
+      "credit": "Art and design.",
+      "thumbnail": "work/thumbs/work-design-motf.jpg",
+      "aspect": 1.44,
+      "media": [
+        { "type": "image", "src": "work/design/motf/01.jpg" },
+        { "type": "image", "src": "work/design/motf/02.jpg" },
+        { "type": "image", "src": "work/design/motf/03.jpg" },
+        { "type": "image", "src": "work/design/motf/04.jpg" },
+        { "type": "image", "src": "work/design/motf/05.jpg" }
+      ]
+    },
+    {
+      "id": "adcb-zomato-offer",
+      "category": "design",
+      "client": "ADCB",
+      "title": "Zomato Offer",
+      "headline": "Choose your dish with ADCB TouchPoints",
+      "agency": "ImpactBBDO",
+      "credit": "Concept, art and design.",
+      "thumbnail": "work/thumbs/work-design-adcb-zomato.jpg",
+      "aspect": 1.44,
+      "media": [
+        { "type": "image", "src": "work/design/adcb_02/01.jpg" },
+        { "type": "image", "src": "work/design/adcb_02/02.jpg" }
+      ]
+    },
+    {
+      "id": "archive-10",
+      "category": "archive",
+      "client": "Archive",
+      "title": "Selected Work 10",
+      "headline": "Archive & Everything",
+      "thumbnail": "work/mix-bag/10.jpg",
+      "aspect": 0.72,
+      "media": [{ "type": "image", "src": "work/mix-bag/10.jpg" }]
+    },
+    {
+      "id": "archive-09",
+      "category": "archive",
+      "client": "Archive",
+      "title": "Selected Work 09",
+      "headline": "Archive & Everything",
+      "thumbnail": "work/mix-bag/09.jpg",
+      "aspect": 1.28,
+      "media": [{ "type": "image", "src": "work/mix-bag/09.jpg" }]
+    },
+    {
+      "id": "archive-02",
+      "category": "archive",
+      "client": "Archive",
+      "title": "Selected Work 02",
+      "headline": "Archive & Everything",
+      "thumbnail": "work/mix-bag/02.jpg",
+      "aspect": 0.8,
+      "media": [{ "type": "image", "src": "work/mix-bag/02.jpg" }]
+    },
+    {
+      "id": "archive-01",
+      "category": "archive",
+      "client": "Archive",
+      "title": "Selected Work 01",
+      "headline": "Archive & Everything",
+      "thumbnail": "work/mix-bag/01.jpg",
+      "aspect": 1,
+      "media": [{ "type": "image", "src": "work/mix-bag/01.jpg" }]
+    },
+    {
+      "id": "archive-03",
+      "category": "archive",
+      "client": "Archive",
+      "title": "Selected Work 03",
+      "headline": "Archive & Everything",
+      "thumbnail": "work/mix-bag/03.jpg",
+      "aspect": 0.66,
+      "media": [{ "type": "image", "src": "work/mix-bag/03.jpg" }]
+    },
+    {
+      "id": "archive-07",
+      "category": "archive",
+      "client": "Archive",
+      "title": "Selected Work 07",
+      "headline": "Archive & Everything",
+      "thumbnail": "work/mix-bag/07.jpg",
+      "aspect": 1.42,
+      "media": [{ "type": "image", "src": "work/mix-bag/07.jpg" }]
+    },
+    {
+      "id": "archive-04",
+      "category": "archive",
+      "client": "Archive",
+      "title": "Selected Work 04",
+      "headline": "Archive & Everything",
+      "thumbnail": "work/mix-bag/04.jpg",
+      "aspect": 0.76,
+      "media": [{ "type": "image", "src": "work/mix-bag/04.jpg" }]
+    },
+    {
+      "id": "archive-05",
+      "category": "archive",
+      "client": "Archive",
+      "title": "Selected Work 05",
+      "headline": "Archive & Everything",
+      "thumbnail": "work/mix-bag/05.jpg",
+      "aspect": 1.12,
+      "media": [{ "type": "image", "src": "work/mix-bag/05.jpg" }]
+    },
+    {
+      "id": "archive-06",
+      "category": "archive",
+      "client": "Archive",
+      "title": "Selected Work 06",
+      "headline": "Archive & Everything",
+      "thumbnail": "work/mix-bag/06.jpg",
+      "aspect": 0.88,
+      "media": [{ "type": "image", "src": "work/mix-bag/06.jpg" }]
+    }
+  ]
+}
