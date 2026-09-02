@@ -297,12 +297,12 @@ video {
 
 .type-caret {
   display: inline-block;
-  width: 1px;
+  width: 5px;
   height: 0.86em;
-  margin-left: 0.04em;
+  /* margin-left: 0.04em; */
   background: var(--ink);
   vertical-align: -0.07em;
-  animation: caret-blink 850ms steps(1) infinite;
+  animation: caret-blink 1000ms steps(1) infinite;
 }
 
 @keyframes caret-blink {
