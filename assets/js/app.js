@@ -418,8 +418,16 @@
       var $video = $("<video>", {
         controls: true,
         playsinline: true,
-        preload: "metadata"
+        preload: "metadata",
+        autoplay: true,
+        muted: true
       });
+
+      var video = $video.get(0);
+      video.muted = true;
+      video.muted = false,
+        video.volume = 0.4;
+
       var $source = $("<source>", {
         src: media.src,
         type: "video/mp4"
